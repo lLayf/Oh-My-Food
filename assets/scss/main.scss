@@ -1,0 +1,15 @@
+$primary: #FF79DA;
+$secondary: #9356DC;
+$tertiary: #99E2D0;
+
+// Base
+@import 'base/_base';
+@import 'utils/_animate';
+
+// Layout
+@import 'layout/_header';
+@import 'layout/_footer';
+
+// Pages
+@import 'pages/_index';
+@import 'pages/_menu';
