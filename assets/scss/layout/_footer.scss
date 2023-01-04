@@ -1,0 +1,31 @@
+.footer {
+    background-color: $footer;
+    padding: 30px 20px 35px 25px;
+    color: white;
+
+    &__logo img {
+        width: 100px;
+        margin-bottom: 20px;
+    }
+
+    &__nav {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+
+        & a {
+            color: white;
+            text-decoration: none;
+        }
+
+        &-icon-one {
+            margin-right: 15px;
+            font-size: 14px;
+        }
+
+        &-icon-two {
+            font-size: 13px;
+            margin-right: 10px;
+        }
+    }
+}

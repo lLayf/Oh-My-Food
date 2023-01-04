@@ -1,0 +1,75 @@
+.header {
+    text-align: center;
+
+    &__logo {
+        margin: 20px 0px 5px 0px;
+
+        & img {
+            width: 140px;
+        }
+    }
+
+    &__menu-logo {
+        display: flex;
+        justify-content: space-around;
+        margin: 20px 0px 10px 0px;
+
+        & img {
+            width: 160px;
+        }
+
+        & a i {
+            font-size: 22px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    &__localisation {
+        padding: 15px 0px;
+        gap: 15px;
+        display: flex;
+        justify-content: center;
+        background-color: $header__localisation;
+        box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.375) inset;
+
+        & a {
+            color: black;
+        }
+    }
+
+    &__main {
+        background-color: $general-grey;
+        padding-top: 25px;
+
+        & h1 {
+            line-height: 1.1;
+            padding: 15px 50px;
+        }
+
+        & p {
+            font-weight: 100;
+            padding: 0px 21px;
+            color: #464646;
+        }
+
+        & button {
+            cursor: pointer;
+            margin: 25px 0px 45px 0px;
+            padding: 18px 25px;
+            font-size: 15px;
+            color: #ffffff;
+            border-radius: 30px;
+            border: none;
+            box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.5);
+            background-image: $linear-btn;
+            transition: 0.3s;
+            opacity: 1;
+
+            &:hover {
+                opacity: 0.9;
+                box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.8);
+            }
+        }
+    }
+}

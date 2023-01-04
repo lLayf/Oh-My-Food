@@ -1,6 +1,14 @@
 $primary: #FF79DA;
 $secondary: #9356DC;
 $tertiary: #99E2D0;
+$general-grey: #f7f7f7;
+$header__localisation: #eaeaea;
+$footer: #353535;
+
+
+// Linear
+
+$linear-btn: linear-gradient(to right bottom, $primary, $secondary);
 
 // Base
 @import 'base/_base';
