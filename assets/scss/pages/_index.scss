@@ -1,0 +1,154 @@
+.functionning {
+
+    &__container {
+        margin-bottom: 45px;
+
+        h2 {
+            margin: 35px 15px 25px 25px; 
+        }
+    }
+
+    &__card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px; 
+
+        @include media-min(910px) {
+            flex-direction: row;
+            flex-wrap: nowrap;
+            gap: 30px;
+            padding: 20px 35px;
+        }
+    }
+
+    &__card {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        width: 80%;
+        background-color: $general-grey;
+        box-shadow: 0px 4px 10px 3px #dbdbdb;
+        border-radius: 20px;
+        padding: 20px 20px;
+
+        span {
+            padding: 3px 0px 0px 8px;
+            margin-left: -20px;
+            width: 25px;
+            height: 25px;
+            border-radius: 20px;
+            background: $secondary;
+            margin-left: -33px;
+            color: #ffffff;
+        }
+
+        i {
+            font-size: 20px;
+            color: $functionning__icon;
+        }
+
+        h3 {
+            font-size: 15px;
+        }
+
+        &-coloring {
+            background-color: $functionning__coloring;
+
+            & i {
+                color: $secondary;
+                
+            }
+        }
+
+    }
+}
+
+.restaurant {
+    
+    &__container {
+        background-color: $general-grey;
+        padding-bottom: 50px;
+
+        h2 {
+            padding: 35px 15px 20px 21px; 
+        }
+    }
+
+    &__card-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+
+        @include media-min(910px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 40px;
+            padding: 20px 20px;
+        }
+    }
+
+    &__card {
+        width: 90%;
+        border-radius: 20px;
+        text-decoration: none;
+        background-color: #ffffff;
+        box-shadow: 0px 4px 10px 3px #dbdbdb;
+
+        @include media-min(910px) {
+            width: 47%;
+        }
+
+        @include media-min(1200px) {
+            width: 22%;
+        }
+
+        &-header {
+            position: relative;
+            text-align: center;
+
+            &-picture {
+                width: 100%;
+                height: 170px;
+                object-fit: cover;
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+            }
+
+            span {
+                position: absolute;
+                top: 8px;
+                right: 16px;
+                background: $tertiary;
+                border-radius: 3px;
+                padding: 6px 12px;
+                color: $picture-font-in-picture;
+              }
+        }
+
+        &-text {
+            display: flex;
+            padding: 12px 50px 15px 15px;
+            justify-content: space-between;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            h3 {
+                margin-bottom: 3px;
+            }
+
+            p {
+                font-weight: 100;
+            }
+    
+            span i {
+                font-size: 22px;
+            }
+        }
+    }
+}

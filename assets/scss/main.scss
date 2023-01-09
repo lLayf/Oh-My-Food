@@ -3,8 +3,16 @@ $secondary: #9356DC;
 $tertiary: #99E2D0;
 $general-grey: #f7f7f7;
 $header__localisation: #eaeaea;
+$functionning__coloring: #f5eeff;
+$functionning__icon: #7e7e7e;
+$picture-font-in-picture: #1d8e70;
 $footer: #353535;
 
+@mixin media-min($_min-width) {
+    @media screen and (min-width: $_min-width) {
+      &{ @content; }
+    }
+}
 
 // Linear
 
