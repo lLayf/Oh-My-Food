@@ -14,6 +14,112 @@ h1 {
   font-size: 25px;
 }
 
+.scrolling-bottom-in-top {
+  animation: scrolling-bottom-in-top 0.5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+.scrolling__load--1 {
+  animation-delay: 200ms;
+}
+
+.scrolling__load--2 {
+  animation-delay: 300ms;
+}
+
+.scrolling__load--3 {
+  animation-delay: 400ms;
+}
+
+.scrolling__load--4 {
+  animation-delay: 500ms;
+}
+
+@keyframes scrolling-bottom-in-top {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.menu__item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: #fff;
+  box-shadow: 0 4px 10px 3px #dbdbdb;
+  color: black;
+  padding: 13px 16px 10px 10px;
+}
+.menu__item-text {
+  max-width: 90%;
+  transition: max-width 0.5s;
+}
+.menu__item-text h3 {
+  margin-bottom: 3px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__item-text p {
+  font-weight: 100;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.menu__item-price {
+  transition: margin-right 0.5s;
+  font-weight: 700;
+}
+.menu__item-action {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: #99E2D0;
+  right: -64px;
+  width: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: right 0.5s;
+}
+
+.menu__item:hover .menu__item-text {
+  max-width: calc(90% - 64px);
+}
+
+.menu__item:hover .menu__item-price {
+  margin-right: 64px;
+}
+
+.menu__item:hover .menu__item-action {
+  right: 0;
+}
+
+.menu__item-icon {
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
+.menu__item:hover .menu__item-icon {
+  transform: rotate(0);
+  color: #99E2D0;
+}
+
 .hoverheart:hover .hoverheart__content-solid {
   opacity: 1;
   transition: 0.3s ease-in-out;
@@ -270,6 +376,123 @@ h1 {
 }
 .restaurant__card-text span i {
   font-size: 22px;
+}
+
+.main__picture {
+  background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  margin-bottom: -35px;
+  z-index: 2;
+  width: 100%;
+  height: 255px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main__picture img {
+  width: 100%;
+  height: 255px;
+  object-fit: cover;
+}
+
+.menu__container {
+  background-color: #f7f7f7;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+}
+.menu__container-title {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding-top: 35px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 500px) {
+  .menu__container-title {
+    justify-content: center;
+  }
+}
+.menu__container-title h1 {
+  font-size: 27px;
+  font-family: "Shrikhand", sans-serif;
+}
+.menu__container-title span {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+.menu__container-subtitle {
+  width: 100%;
+  max-width: 392px;
+}
+.menu__container-subtitle h2 {
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-left: 14px;
+}
+.menu__container-highlight {
+  padding-bottom: 3px;
+  border-bottom: 3px solid #99E2D0;
+}
+@media screen and (min-width: 785px) {
+  .menu__container-highlight {
+    margin-left: 30%;
+  }
+}
+.menu__container-center {
+  margin-left: 40px;
+}
+@media screen and (min-width: 785px) {
+  .menu__container-center {
+    margin-left: 50%;
+  }
+}
+.menu__container-button {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 45px;
+}
+.menu__container-button button {
+  cursor: pointer;
+  padding: 18px 50px;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right bottom, #FF79DA, #9356DC);
+  transition: 0.3s;
+  opacity: 1;
+}
+.menu__container-button button:hover {
+  opacity: 0.9;
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.8);
+}
+.menu__item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  padding-bottom: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+@media screen and (min-width: 500px) {
+  .menu__item-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0px 15px;
+    margin: 25px 0px;
+  }
+}
+@media screen and (min-width: 930px) {
+  .menu__item-container {
+    flex-direction: row;
+    padding: 0px 15px;
+    margin: 25px 0px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

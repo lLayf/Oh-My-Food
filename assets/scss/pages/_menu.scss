@@ -1,0 +1,128 @@
+.main {
+
+    &__picture {
+        background-image: url("../images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+        margin-bottom: -35px;
+        z-index: 2;
+        width: 100%;
+        height: 255px;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__picture img {
+        width: 100%;
+        height: 255px;
+        object-fit: cover;
+    }
+}
+
+.menu {
+
+    &__container {
+        background-color: $general-grey;
+        border-top-right-radius: 40px;
+        border-top-left-radius: 40px;
+
+        &-title {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            padding-top: 35px;
+            padding-left: 20px; 
+            padding-right: 20px;
+            margin-bottom: 30px;
+
+            @include media-min(500px) {
+                justify-content: center;
+            }
+            
+            h1 {
+                font-size: 27px;
+                font-family: 'Shrikhand', sans-serif;
+            }
+
+            span {
+                font-size: 24px;
+                margin-bottom: 25px;
+            }
+        }
+
+        &-subtitle {
+            width: 100%;
+            max-width: 392px;
+            
+            h2 {
+                font-weight: 100;  
+                text-transform: uppercase;
+                font-size: 16px;
+                padding-left: 14px;
+            }
+
+        }
+
+        &-highlight {
+            padding-bottom: 3px;
+            border-bottom: 3px solid $tertiary;
+            @include media-min(785px) {
+                margin-left: 30%;
+            }
+        }
+
+        &-center {
+            margin-left: 40px;
+            @include media-min(785px) {
+                margin-left: 50%;
+            }
+        }
+
+        &-button {
+            width: 100%;
+            text-align: center;
+            padding-bottom: 45px;
+        }
+
+        &-button button {
+            cursor: pointer;
+            padding: 18px 50px;
+            font-size: 16px;
+            color: #ffffff;
+            border-radius: 30px;
+            border: none;
+            box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.5);
+            background-image: $linear-btn;
+            transition: 0.3s;
+            opacity: 1;
+
+            &:hover {
+                opacity: 0.9;
+                box-shadow: 0px 3px 8px -1px rgba(0,0,0,0.8);
+            }
+        }
+    }
+
+    &__item-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+        padding-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        @include media-min(500px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0px 15px;
+            margin: 25px 0px;
+        }
+
+        @include media-min(930px) {
+            flex-direction: row;
+            padding: 0px 15px;
+            margin: 25px 0px;
+        }
+    }
+}

@@ -1,0 +1,231 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  max-width: 400px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 25px;
+}
+
+.header {
+  text-align: center;
+}
+.header__logo {
+  margin: 20px 0px 5px 0px;
+}
+.header__logo img {
+  width: 140px;
+}
+.header__localisation {
+  padding: 15px 0px;
+  gap: 15px;
+  display: flex;
+  justify-content: center;
+  background-color: #eaeaea;
+  box-shadow: 0 20px 10px -20px rgba(0, 0, 0, 0.375) inset;
+}
+.header__localisation a {
+  color: black;
+}
+.header__main {
+  background-color: #f7f7f7;
+  padding-top: 25px;
+}
+.header__main h1 {
+  line-height: 1.1;
+  padding: 15px 50px;
+}
+.header__main p {
+  font-weight: 100;
+  padding: 0px 21px;
+  color: #464646;
+}
+.header__main button {
+  margin: 25px 0px 45px 0px;
+  padding: 18px 25px;
+  font-size: 15px;
+  color: #ffffff;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0px 3px 8px -1px rgba(0, 0, 0, 0.5);
+  background-image: linear-gradient(to right bottom, #ea84da, #e780da, #e37dd9, #e079d9, #dc76d9, #d873d9, #d471d9, #d06ed9, #ca6cd9, #c46ad9, #be69d9, #b867d9);
+}
+
+.footer {
+  background-color: #353535;
+  padding: 30px 20px 35px 25px;
+  color: white;
+}
+.footer__logo img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+.footer__nav {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.footer__nav a {
+  color: white;
+  text-decoration: none;
+}
+.footer__nav-icon-one {
+  margin-right: 15px;
+  font-size: 14px;
+}
+.footer__nav-icon-two {
+  font-size: 13px;
+  margin-right: 10px;
+}
+
+.functionning__container {
+  margin-bottom: 45px;
+}
+.functionning__container h2 {
+  margin: 35px 15px 25px 25px;
+}
+.functionning__card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.functionning__card {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: 80%;
+  background-color: #f7f7f7;
+  box-shadow: 0px 4px 10px 3px #dbdbdb;
+  border-radius: 20px;
+  padding: 20px 20px;
+}
+.functionning__card:hover {
+  background-color: #f5eeff;
+}
+.functionning__card span {
+  padding: 3px 0px 0px 8px;
+  margin-left: -20px;
+  width: 25px;
+  height: 25px;
+  border-radius: 20px;
+  background: #935bd9;
+  margin-left: -33px;
+  color: #ffffff;
+}
+.functionning__card i {
+  font-size: 20px;
+  color: #7e7e7e;
+}
+.functionning__card h3 {
+  font-size: 15px;
+}
+
+.restaurant__container {
+  background-color: #f7f7f7;
+  padding-bottom: 50px;
+}
+.restaurant__container h2 {
+  padding: 35px 15px 20px 21px;
+}
+.restaurant__card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.restaurant__card {
+  width: 90%;
+  border-radius: 20px;
+  text-decoration: none;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px 3px #dbdbdb;
+}
+.restaurant__card-header {
+  position: relative;
+  text-align: center;
+}
+.restaurant__card-header-picture {
+  width: 100%;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.restaurant__card-header span {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+  background: #9ce2d0;
+  border-radius: 3px;
+  padding: 6px 12px;
+  color: #1d8e70;
+}
+.restaurant__card-text {
+  color: black;
+  padding: 12px 30px 15px 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.restaurant__card-text h3 {
+  margin-bottom: 3px;
+}
+.restaurant__card-text p {
+  font-weight: 100;
+}
+.restaurant__card-text span i {
+  font-size: 22px;
+}
+.restaurant__card-text span i:hover {
+  color: red;
+}
+
+.main__picture img {
+  width: 100%;
+  height: 255px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.menu__container {
+  background-color: #f7f7f7;
+}
+.menu__card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.menu__card-element {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  width: 90%;
+  border-radius: 15px;
+  text-decoration: none;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 10px 3px #dbdbdb;
+  color: black;
+  padding: 13px 20px 10px 10px;
+  background-color: red;
+}
+.menu__card-element p {
+  font-weight: 700;
+}
+.menu__card-element-text {
+  width: 60%;
+}
+.menu__card-element-text h3 {
+  margin-bottom: 3px;
+}
+.menu__card-element-text p {
+  font-weight: 100;
+}/*# sourceMappingURL=main.css.map */
